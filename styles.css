@@ -83,3 +83,83 @@
 .vertical-bars > div {
 	background-color: #34ebe1;
 }
+
+.horizontal-bars,
+.vertical-stack-centered {
+	display: grid;
+	width: 50vw;
+	height: 300px;
+	grid-template-rows: repeat(5, 10%);
+	grid-template-columns: 1fr;
+	row-gap: 10%;
+	align-content: center;
+	background-color: rgb(110, 114, 114);
+}
+
+.horizontal-bars > div {
+	background-color: #34ebe1;
+}
+
+.vertical-stack-centered > div {
+	background-color: #34ebe1;
+	width: 50%;
+}
+
+.vertical-stack-centered {
+	justify-items: center;
+}
+
+.mosaic {
+	display: grid;
+	width: 70vw;
+	grid-template-rows: minmax(40px, auto);
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px;
+	background-color: rgb(110, 114, 114);
+	padding: 10px;
+	height: 400px;
+}
+
+.mosaic > div {
+	background-color: #34ebe1;
+	border-radius: 5px;
+}
+
+.mosaic > .item1 {
+	grid-row: 1 / 6;
+}
+
+.mosaic > .item2 {
+	grid-row: 1 / 8;
+}
+
+.mosaic > .item3 {
+	grid-row: 1 / 7;
+}
+
+.mosaic > .item4 {
+	grid-row: 6 / 9;
+}
+
+.mosaic > .item5 {
+	grid-row: 8 / 12;
+}
+
+.mosaic > .item6 {
+	grid-row: 7 / 12;
+}
+
+.mosaic > .item7 {
+	grid-row: 9 / 13;
+}
+
+.mosaic > .item8 {
+	grid-row: 12 / 16;
+}
+.mosaic > .item9 {
+	grid-row: 12 / 17;
+}
+
+.mosaic > .item10 {
+	grid-row: 13 / 18;
+}
