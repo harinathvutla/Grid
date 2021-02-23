@@ -215,15 +215,15 @@
 		'picture blogText blogText blogText'
 		'picture . . .'
 		'picture blogButton1 blogButton2 .';
-	gap: 5px;
 	background-color: darkgray;
 	padding: 20px;
+	margin: 20px;
 }
 
 .blog-picture {
 	grid-area: picture;
 	background-color: #34ebe1;
-	margin: 10px;
+	margin-right: 10px;
 }
 
 .blog-headline {
@@ -238,11 +238,10 @@
 .blog-button1 {
 	grid-area: blogButton1;
 	background-color: #34ebe1;
-	margin-bottom: 10px;
+	margin-right: 10px;
 }
 
 .blog-button2 {
 	grid-area: blogButton2;
 	background-color: #34ebe1;
-	margin-bottom: 10px;
 }
